@@ -109,16 +109,71 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: Vasanth S
+RegisterNumber:  212222110052
 */
+SR:
+module sr_flipflop(S, R, clock, Q, Qbar);
+input S, R, clock;
+output Q, Qbar;
+wire X, Y;
+nand(X, S, clock);
+nand(Y, R, clock);
+nand(Q, X, Qbar);
+nand(Qbar, Y, Q);
+endmodule
 
+D:
+module d_flipflop(D, clock, Q, Qbar);
+input D, clock;
+output Q, Qbar;
+assign Dbar = ~D;
+wire X, Y;
+nand(X, D, clock);
+nand(Y, Dbar, clock);
+nand(Q, X, Qbar);
+nand(Qbar, Y, Q);
+endmodule
+
+JK:
+module jk_flipflop(J, K, clock, Q, Qbar);
+input J, K, clock;
+output Q, Qbar;
+wire P, S;
+nand(P, J, clock, Qbar);
+nand(S, K, clock, Q);
+nand(Q, P, Qbar);
+nand(Qbar, S, Q);
+endmodule
+
+T:
+module t_flipflop(T, clock, Q, Qbar);
+input T, clock;
+output Q, Qbar;
+wire A, B;
+nand(A, T, clock, Qbar);
+nand(B, T, clock, Q);
+nand(Q, A, Qbar);
+nand(Qbar, B, Q);
+endmodule
 
 
 
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
+SR:
+![sr_ff_rtl](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/342abfd5-93fe-474b-af1d-fba3569a0f49)
+
+D:
+![D](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/472c77b2-9f1b-457b-8f0f-a2176fccc189)
+
+JK:
+![JK](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/9d078e66-0618-436b-bc3e-36d5f58619a0)
+
+T:
+![T](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/b5a95617-b06b-4809-9a6c-500dc605e990)
+
 
 
 
@@ -129,6 +184,18 @@ RegisterNumber:
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
+SR OP:
+![SR OP](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/624973a6-1f68-494f-92c6-8706ad93732e)
+
+D OP:
+![D OP](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/135652b6-3910-4da5-b31f-28f8974cf6cf)
+
+JK OP:
+![JK OP](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/4f75ac03-2ff8-4fb9-927b-57bb81b42928)
+
+T OP:
+![T OP](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/7bd70eb2-ca3c-4b64-96a9-5817aeebdce6)
+
 
 
 
