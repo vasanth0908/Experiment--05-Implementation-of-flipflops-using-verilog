@@ -162,18 +162,17 @@ endmodule
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
-SR:
-![sr_ff_rtl](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/342abfd5-93fe-474b-af1d-fba3569a0f49)
+## SR:
+![sr](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/64d84387-da3a-4b3d-9d0c-4f90625bdde5)
 
-D:
-![D](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/472c77b2-9f1b-457b-8f0f-a2176fccc189)
+## JK:
+![JK](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/11c4baf0-0d35-4851-ae01-f3dfa0cfff59)
 
-JK:
-![JK](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/9d078e66-0618-436b-bc3e-36d5f58619a0)
+## T:
+![T](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/f87b5fab-c5df-4327-a117-691beffb00b7)
 
-T:
-![T](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/b5a95617-b06b-4809-9a6c-500dc605e990)
-
+## D:
+![D](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/e79ebaa5-011a-4fdd-a8bc-a79e3eebb295)
 
 
 
@@ -184,17 +183,17 @@ T:
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-SR OP:
-![SR OP](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/624973a6-1f68-494f-92c6-8706ad93732e)
+## SR OP:
+![SR OP](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/56d97f1a-6e2e-4e3f-a2b6-19f8ead9eaa7)
 
-D OP:
-![D OP](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/135652b6-3910-4da5-b31f-28f8974cf6cf)
+## JK OP:
+![JK OP](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/70bff8a6-0076-4e8d-92e6-ef0385cc8c59)
 
-JK OP:
-![JK OP](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/4f75ac03-2ff8-4fb9-927b-57bb81b42928)
+## T OP:
+![T OP](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/cd4d2fc5-2ca1-4e60-b5d0-5d16e6b84225)
 
-T OP:
-![T OP](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/7bd70eb2-ca3c-4b64-96a9-5817aeebdce6)
+## D OP:
+![D OP](https://github.com/vasanth0908/Experiment--05-Implementation-of-flipflops-using-verilog/assets/122000018/1c7c38bc-20ae-4570-a1f9-db4588c02148)
 
 
 
@@ -205,3 +204,4 @@ T OP:
 
 
 ### RESULTS 
+All the flipflops are implemented using verilog and their functionality has been validated using their functional tables.
